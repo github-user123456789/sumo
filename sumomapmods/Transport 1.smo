@@ -1,0 +1,56 @@
+man(vec(0,271,835),-0,1);
+man(vec(0,271,765),0,3);
+man(vec(-35,271,800),vec(1,0,0),1);
+man(vec(35,271,800),vec(-1,0,0),9);
+addbox(vec(60,1,800),vec(0,18,0),0,1); turnto(vec(0,-0.25,1));breakability(999999);
+addbox(vec(60,1,50),vec(0,212,826),0,1);breakability(999999);
+a(pos)={
+addbox(vec(60,17,10),pos+vec(0,0,0),11,0);
+a=vec(0,1,0);
+repeat(33){
+a=rot(a,vec(pi*2/33,0,0));
+cutplane(a,-3);
+};
+};
+y=214;
+z=767;
+repeat(24){
+a(vec(0,y,z));
+y=y-16;
+z=z-64;
+};
+b(pos)={
+addbox(vec(60,17,10),pos+vec(0,0,0),11,0);
+b=vec(0,1,0);
+repeat(33){
+b=rot(b,vec(pi*2/33,0,0));
+cutplane(b,-3);
+};
+};
+z=780;
+repeat(2){
+b(vec(0,216,z));
+z=z+60;
+};
+addbox(vec(60,1,200),vec(0,311,1055.5),0,1);turnto(vec(0,-0.5,1));breakability(999999);
+addbox(vec(1,25,60),vec(30,244,810),10,0);breakability(999999);
+addbox(vec(1,25,60),vec(-30,244,810),10,0);breakability(999999);
+addbox(vec(60,1,80),vec(0,270,790),10,0);breakability(999999);
+addbox(vec(28,1,50),vec(0,221,826),0,1);breakability(999999);
+addbox(vec(28,1,800),vec(0,27,0),0,1); turnto(vec(0,-0.25,1));breakability(999999);
+addbox(vec(14,1,800),vec(46,27,0),0,1); turnto(vec(0,-0.25,1));breakability(999999);
+addbox(vec(14,1,800),vec(-46,27,0),0,1); turnto(vec(0,-0.25,1));breakability(999999);
+addbox(vec(28,1,800),vec(0,70,0),0,1); turnto(vec(0,-0.25,1));breakability(999999);
+addbox(vec(14,1,800),vec(46,70,0),0,1); turnto(vec(0,-0.25,1));breakability(999999);
+addbox(vec(14,1,800),vec(-46,70,0),0,1); turnto(vec(0,-0.25,1));breakability(999999);
+addbox(vec(180,34,15),vec(0,416,1229),11,0);breakability(999999);
+b=vec(0,1,0);
+repeat(66){
+b=rot(b,vec(pi*2/66,0,0));
+cutplane(b,-15);
+};
+addbox(vec(60,1,65),vec(0,-177,-841),0,1);breakability(999999);
+addbox(vec(0.5,1,100),vec(46,-125,-876),0,1);breakability(999999);
+addbox(vec(0.5,1,100),vec(-46,-125,-876),0,1);breakability(999999);
+addbox(vec(1,8,800),vec(68,78,0),6,1); turnto(vec(0,-0.25,1));breakability(999999);
+addbox(vec(1,8,800),vec(-68,78,0),6,1); turnto(vec(0,-0.25,1));breakability(999999);
